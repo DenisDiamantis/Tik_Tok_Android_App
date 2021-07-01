@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.myAPP.Login">
+
+    <TextView
+        android:id="@+id/LoginPromt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LoginText"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/UsernameIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="146dp" />
+
+    <EditText
+        android:id="@+id/UsernameIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="513dp"
+        android:ems="10"
+        android:hint="@string/txtUsername"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:shadowColor="#3F51B5"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#953F51B5"
+        android:textColorLink="#3F51B5"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/LoginPromt"
+        app:layout_constraintStart_toStartOf="@+id/LoginPromt"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPromt" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="@+id/UsernameIn"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/UsernameIn"
+        app:layout_constraintTop_toBottomOf="@+id/port" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter port"
+        android:inputType="textPersonName"
+        android:textColorHint="#953F51B5"
+        app:layout_constraintEnd_toEndOf="@+id/UsernameIn"
+        app:layout_constraintStart_toStartOf="@+id/UsernameIn"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameIn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

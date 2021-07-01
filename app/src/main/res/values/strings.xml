@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TikTok</string>
+    <string name="LoginText">Enter your unique username to log in...</string>
+    <string name="txtUsername">Enter username</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myAPP.Menu">
+
+    <EditText
+        android:id="@+id/search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Hashtag or channelname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="@+id/search_text"
+        app:layout_constraintStart_toStartOf="@+id/search_text"
+        app:layout_constraintTop_toBottomOf="@+id/search_text" />
+
+    <Button
+        android:id="@+id/upload_video"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="upload videos"
+        app:layout_constraintEnd_toEndOf="@+id/search_btn"
+        app:layout_constraintStart_toStartOf="@+id/search_btn"
+        app:layout_constraintTop_toBottomOf="@+id/search_btn" />
+
+    <Button
+        android:id="@+id/add_hashtag"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="manage hashtags"
+        app:layout_constraintEnd_toEndOf="@+id/upload_video"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/upload_video"
+        app:layout_constraintTop_toBottomOf="@+id/upload_video" />
+
+    <Button
+        android:id="@+id/delete_video"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="delete video"
+        app:layout_constraintEnd_toEndOf="@+id/add_hashtag"
+        app:layout_constraintStart_toStartOf="@+id/add_hashtag"
+        app:layout_constraintTop_toBottomOf="@+id/add_hashtag" />
+
+    <Button
+        android:id="@+id/downloads"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Downloads"
+        app:layout_constraintEnd_toEndOf="@+id/delete_video"
+        app:layout_constraintStart_toStartOf="@+id/delete_video"
+        app:layout_constraintTop_toBottomOf="@+id/delete_video" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
